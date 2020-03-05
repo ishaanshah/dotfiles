@@ -3,7 +3,7 @@ allow_bold = true
 audible_bell = false
 bold_is_bright = true
 clickable_url = true
-font = Roboto Mono Nerd Font 11 
+font = Roboto Mono Nerd Font 11
 scroll_on_output = false
 scroll_on_keystroke = true
 # Length of the scrollback buffer, 0 disabled the scrollback buffer
@@ -14,13 +14,13 @@ scrollback_lines = 10000
 hyperlinks = true
 
 # $BROWSER is used by default if set, with xdg-open as a fallback
-browser = google-chrome-stable 
+browser = xdg-open
 
 # "system", "on" or "off"
 cursor_blink = on
 
 # "block", "underline" or "ibeam"
-cursor_shape = "ibeam" 
+cursor_shape = "ibeam"
 
 # Hide links that are no longer valid in url select overlay mode
 #filter_unmatched_urls = true
