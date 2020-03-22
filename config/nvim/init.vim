@@ -20,6 +20,7 @@ Plug 'lervag/vimtex'
 Plug 'shime/vim-livedown'
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'MaxMEllon/vim-jsx-pretty'
 
 call plug#end()
@@ -56,7 +57,7 @@ set undolevels=999 history=999
 set t_Co=256
 set background=dark
 let g:airlinetheme="base16_ocean"
-colorscheme base16-material 
+colorscheme base16-material
 set termguicolors
 
 set showcmd
@@ -116,7 +117,6 @@ tnoremap <C-h> <C-w>h
 " tnoremap <C-l> <C-w>l
 
 " for doing some things faster
-nnoremap <leader>q :bd<CR>
 nnoremap <leader>x :x<CR>
 nnoremap <leader>w :w<CR>
 
@@ -163,6 +163,8 @@ tnoremap ]b <C-\><C-n>:bn!<cr>
 tnoremap [b <C-\><C-n>:bp!<cr>
 tnoremap ]B <C-\><C-n>:bfirst!<cr>
 tnoremap ]B <C-\><C-n>:blast!<cr>
+" for closing buffer without closing window
+map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
 
 " quickfix maps
 nnoremap ]q :cnext<cr>

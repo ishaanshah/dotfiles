@@ -107,3 +107,17 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Set browser
+export BROWSER="google-chrome-stable"
+
+# fzf keybindings and completion
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+
+# Location for global node modules
+NPM_PACKAGES="${HOME}/.npm-packages"
+export PATH="$PATH:$NPM_PACKAGES/bin"
+# Preserve MANPATH if you already defined it somewhere in your config.
+# Otherwise, fall back to `manpath` so we can inherit from `/etc/manpath`.
+export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
